@@ -1,0 +1,181 @@
+#page-room {
+  padding: 24px;
+
+  header {
+    padding: 24px;
+    border-bottom: 1px solid #e2e2e2;
+
+    .content {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > img {
+        max-height: 45px;
+        cursor: pointer;
+      }
+
+      > div {
+        display: flex;
+        gap: 16px;
+
+        button {
+          height: 40px;
+        }
+      }
+    }
+
+    .admin {
+      @media (max-width: 575px) {
+        img {
+          height: 35px;
+        }
+
+        .room-code {
+          height: 35px;
+          max-width: 100px;
+
+          img {
+            height: 20px;
+          }
+        }
+
+        button.outlined {
+          height: 35px;
+          font-size: 12px;
+          width: 110px;
+          padding: 0 5px;
+          margin-left: -5px;
+        }
+      }
+
+      @media (min-width: 576px) and (max-width: 768px) {
+        .room-code {
+          max-width: 180px;
+
+          span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: horizontal;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 575px) {
+      padding: 0 0 24px 0;
+    }
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .room-title {
+      margin: 32px 0 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        color: #29292e;
+        margin-right: 16px;
+      }
+
+      span {
+        background: #e559f9;
+        border-radius: 9999px;
+        padding: 8px 16px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      @media (max-width: 575px) {
+        h1 {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    form {
+      textarea {
+        width: 100%;
+        border: 0;
+        padding: 16px;
+        border-radius: 8px;
+        background: #fefefe;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        resize: vertical;
+        min-height: 130px;
+      }
+
+      .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .user-info {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+          }
+
+          span {
+            margin-left: 8px;
+            color: #29292e;
+            font-weight: 500;
+            font-size: 14px;
+
+            @media (max-width: 575px) {
+              max-width: 100px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: horizontal;
+            }
+          }
+        }
+
+        > span {
+          font-size: 14px;
+          color: #737380;
+          font-weight: 500;
+
+          button {
+            background: transparent;
+            border: 0;
+            color: #835afd;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+
+        @media (max-width: 575px) {
+          button {
+            font-size: 12px;
+            height: 35px;
+          }
+        }
+      }
+    }
+
+    .question-list {
+      margin-top: 32px;
+    }
+  }
+}
