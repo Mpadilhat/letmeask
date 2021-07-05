@@ -4,7 +4,7 @@
 
 Em suma, é uma espécie de fórum de perguntas e respostas em tempo real em que você pode ser administrador ou um simples usuário:
 
-- Ao criar uma sala para determinado assunto, você passa a administrá-la, ou seja, pode destacar uma pergunta, marcá-la como respondida ou mesmo excluí-la.
+- Ao criar uma sala para determinado assunto, você passa a administrá-la, ou seja, pode destacar uma pergunta, marcá-la como respondida ou mesmo excluí-la;
 - Ao entrar em uma sala, você pode criar uma pergunta ou marcar alguma existente como "gostei!".
 
 ## Tecnologias utilizadas
@@ -34,9 +34,9 @@ Este projeto utiliza [variáveis de ambiente](https://dev.to/guiselair/utilizand
 > - Dentro do seu projeto, crie o seu banco de dados no Realtime Database;
 > - Copie o objeto **`firebaseConfig`** que irá aparecer no passo a passo da criação do banco;
 > - No seu código, procure pelo arquivo `.env.local` e, em cada linha correspondente ao atributo do objeto copiado, cole o valores. 
-> Exemplo: **`const firebaseConfig = { apiKey: "abcdefghijklmnopqrstuvwxyz", ...}`** ==> **No arquivo `.env.local`:** REACT_APP_API_KEY="abcdefghijklmnopqrstuvwxyz"
+> Exemplo: **`const firebaseConfig = { apiKey: "abcdefghijklmnopqrstuvwxyz", ...}`** ==> **No arquivo `.env.local`:** REACT_APP_API_KEY="abcdefghijklmnopqrstuvwxyz" ...
 
-A configuração acima será utilizada no arquivo `firebase.tsx`, portanto, se não existir o arquivo de variáveis de ambiente, crie-o seguindo os nomes de variáveis que estão definidos em `firebase.tsx`.
+A configuração acima será utilizada no arquivo `firebase.ts`, portanto, se não existir o arquivo de variáveis de ambiente, crie-o seguindo os nomes de variáveis que estão definidos em `firebase.ts`.
 
 #### Bom código! ✌😉
 
